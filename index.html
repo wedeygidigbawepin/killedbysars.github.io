@@ -64,7 +64,7 @@
   </section>
 
   </header>
- 
+ <div class="text-center mt-5"><h4>The following <span class="murder_count text-danger">15</span> people were murdered.</h4><h4>There are many more that are not yet documented.</h4></div>
 <h1 class="text-danger p-0 m-0 display-2 text-center">·</h1>
   <section>
     <div class="container">
@@ -305,6 +305,10 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+  var murder_count = jQuery('.victim_details').length;
+  jQuery('.murder_count').text(murder_count)
+  </script>
 </body>
 
 </html>
